@@ -33,7 +33,6 @@ while (checker) {
         amount = prompt("Error, try again. Enter your amount of money:");
     }
 
-
     let convertToStr = prompt("Enter currency that you want to convert to (uah, usd, eur, rub, gbp):");
     // check if correct input
     while (convertToStr != "uah" &&
