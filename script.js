@@ -29,7 +29,7 @@ while (checker) {
 
     let amount = prompt("Enter your amount of money:");
     // check if correct input
-    while (isNaN(amount)) {
+    while (isNaN(amount) || amount < 0) {
         amount = prompt("Error, try again. Enter your amount of money:");
     }
 
