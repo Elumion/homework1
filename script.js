@@ -22,10 +22,10 @@ while (checker) {
     }
 
     let currencyNum =
-        currencyStr == "uah" ? 26.282 :
-            currencyStr == "usd" ? 1 :
-                currencyStr == "eur" ? 0.863 :
-                    currencyStr == "gbp" ? 0.734 : 71.79;
+        currencyStr == "uah" ? uah :
+            currencyStr == "usd" ? usd :
+                currencyStr == "eur" ? eur :
+                    currencyStr == "gbp" ? gbp : rub;
 
     let amount = prompt("Enter your amount of money:");
     // check if correct input
@@ -45,10 +45,10 @@ while (checker) {
     }
 
     let convertToNum =
-        convertToStr == "uah" ? 26.282 :
-            convertToStr == "usd" ? 1 :
-                convertToStr == "eur" ? 0.863 :
-                    convertToStr == "gbp" ? 0.734 : 71.79;
+        convertToStr == "uah" ? uah :
+            convertToStr == "usd" ? usd :
+                convertToStr == "eur" ? eur :
+                    convertToStr == "gbp" ? gbp : rub;
 
     let convertedWallet = +((amount / currencyNum) * convertToNum).toFixed(3);
 
