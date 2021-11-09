@@ -12,4 +12,4 @@ const checkArr = [1, 5, "rew", null, undefined, true, false, 53n, 53, 3, undefin
 
 console.log(filterBy(checkArr, undefined, "str", 52, true, 1n));
 console.log(checkArr); // не змінився
-console.log(filterBy(['hello', 'world', 23, '23', null], 'string'));
+console.log(filterBy(['hello', 'world', 23, '23', null], 'string')); 
